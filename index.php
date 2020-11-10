@@ -544,7 +544,7 @@ body, html {
         # '; DROP TABLE forum_topics; --
         #now running 2 queries - first where email = empty string; then drop table forum_topics
         #$conn = mysqli_connect('localhost','root','', 'codecourse');
-        $conn = new PDO('mysql:host=127.0.0.1;dbname=php_security','root','LVq7j78bJy8xYq');
+        $conn = new PDO('mysql:host=127.0.0.1;dbname=php_security','root','');
 
         if (isset($_POST['pass'])) {
           $pass = $_POST['pass'];
@@ -669,7 +669,7 @@ body, html {
       <div style="background-color:darkslategrey" id="rcorners">
         <?php
 
-        $sqli2 = new mysqli("localhost","root","LVq7j78bJy8xYq","php_security");
+        $sqli2 = new mysqli("localhost","root","","php_security");
 
         if($sqli2->connect_error){
           echo $sqli2->connection_error;
