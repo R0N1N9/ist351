@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'Anurati-Regular';
+	font-style: normal;
+	font-weight: normal;
+    src: local('Anurati-Regular'), url('Anurati-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Cyberpunk';
+	font-style: normal;
+	font-weight: normal;
+    src: local('Cyberpunk'), url('Cyberpunk.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Blanka-Regular';
+	font-style: normal;
+	font-weight: normal;
+    src: local('Blanka-Regular'), url('Blanka-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Elianto-Regular';
+	font-style: normal;
+	font-weight: normal;
+    src: local('Elianto-Regular'), url('Elianto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Marske';
+	font-style: normal;
+	font-weight: normal;
+    src: local('Marske'), url('Marske.ttf') format('truetype');
+}
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+
+.blinkingmint{
+    animation:blinkingTextmint 1.2s infinite;
+}
+.blinkingyellow{
+    animation:blinkingTextyellow 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    100%{   color: crimson;    }
+}
+
+@keyframes blinkingTextmint{
+    0%{     color: #000;    }
+    100%{   color: #AAF0D1;    }
+}
+@keyframes blinkingTextyellow{
+    0%{     color: #000;    }
+    100%{   color: yellow;    }
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+#rcorners {
+  border-radius: 50px;
+  border: 5px solid #73AD21;
+  background: rgba(204, 204, 204, 0.5);
+  padding: 20px;
+  position:relative;
+}
+#menu {
+  border-radius: 50px;
+  border: 5px solid #73AD21;
+  background: rgba(204, 204, 204, 0.5);
+  padding: 20px;
+  position:relative;
+}
+
+#opaque {
+  opacity:0.5;
+}
+
+hr {
+	border-top: 1px solid red;
+}
+
+#idex {
+  color: #FF355E;
+  font-weight:bold;
+}
+
+#countertop {
+  padding-top: 50px;
+  background-image: url('items/bamboomat.jpg');
+}
+
+
+.classex {
+  color: #AAF0D1;
+  font-weight:bold;
+}
+
+a {
+	color: hotpink
+}
+
+body {
+  background-color: darkslategray;
+  /*background-image:
+  url('outrun.gif');*/
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size:2000px 2000px;
+
+}
+/*
+body {
+  background-color: darkslategray;
+  background-image:
+  url('nightcity.gif');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size:2000px 4000px;
+
+}
+*/
+header {
+  /*color: #FFFF66;*/
+  color: crimson;
+  font-family: 'Cyberpunk';
+  font-size:100px;
+  /*background-image: url('images/steamuserimages-a.akamaihd.net.gif');*/
+  background-repeat: repeat-x;
+  animation-name: blinkingText;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+h3 {
+  color: #50BFE6;
+  text-align: center;
+  font-family: 'Marske';
+  font-size:50px;
+  /*background-image: url('nightcity.gif');
+  background-repeat: no-repeat;*/
+
+}
+
+h4 {
+  color: crimson;
+  text-align: center;
+  font-family: 'Blanka-Regular';
+  font-size:50px;
+  /*background-image: url('nightcity.gif');
+  background-repeat: no-repeat;*/
+  /*animation-name: blinkingText;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;*/
+}
+
+h1 {
+  color: #50BFE6;
+  text-align: center;
+  font-family: 'Marske';
+  font-size:50px;
+}
+
+h2 {
+  color: crimson;
+  text-align: center;
+  font-family: 'Cyberpunk';
+  font-size:50px;
+  animation-name: blinkingTextred;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+
+h5 {
+  color: #FF355E;
+  text-align: center;
+  font-family: 'Elianto-Regular';
+  font-size:30px;
+}
+
+/*
+blockquote {
+  color: violet;
+  text-align: center;
+  font-family: verdana;
+  font-size:30px;
+}
+*/
+p {
+  color: #FFFF66;
+  font-family: verdana;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+div {
+  color: cyan;
+  text-align: center;
+  font-family: Marske;
+  font-size:30px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size:1500px 1000px;
+}
+td {
+  width: 2000px;
+  text-align: left;
+}
+section {
+  color: cyan;
+  font-family: Anurati-Regular;
+  font-size:30px;
+}
+
+summary {
+  color: crimson;
+  font-family: Anurati-Regular;
+  font-size:70px;
+}
+
+footer {
+  color: cyan;
+  font-family: Blanka-Regular;
+  font-size:20px;
+}
+/*
+#chopsticks{
+	position:relative;
+	height:500px;
+	width:80px;
+	left:120px;
+	top:200px
+}
+*/
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #111111;
+}
+
+nav .wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 60px;
+}
+
+nav ul {
+
+}
+
+nav ul li {
+  list-style: none;
+  float: left;
+}
+
+nav ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 16px;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #31a6ff;
+}
+
+section {
+  background-color: #fff;
+  width: 94%;
+  padding: 20px 3%;
+}

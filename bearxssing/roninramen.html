@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ronin Ramen</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<!-- ******************************************************************************************************** -->
+<body style="background-image: url('ramenbargif.gif')">
+
+	<script src="RestaurantArrays.js"></script>
+
+	<audio id="Dust">
+		<source src="Dust.mp3" type="audio/mpeg">
+	</audio>
+	<script>
+		var myMusic = document.getElementById("Dust");
+		function playAudio() {
+		  myMusic.play();
+		}
+		function pauseAudio() {
+		  myMusic.pause();
+		}
+	</script>
+
+	<div class="container" style="background-image: url('flyingcars.gif')">
+
+		<header id="rcorners" style="background-image: url('noodles.gif')">Ronin Ramen</header>
+
+	<!--Title -->
+		<h3 id="rcorners" class="blinkingyellow" style="background-image: url('walking.gif')">Welcome!!!</h3>
+	</div>
+
+	<div class="container">
+		<div class="alert alert-warning alert-dismissible">
+	    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	    <strong class="blinkingmint">ALERT!</strong> MASKS REQUIRED BEFORE EATING DUE TO COVID-49
+	  </div>
+	</div>
+
+	<hr/>
+	<hr/>
+	<hr/>
+	<summary>Le Menu</summary>
+	<button onclick="playAudio()">Synthwave</button>
+	<button onclick="pauseAudio()">Un-Synthwave</button>
+		<div id="menu" class="container">
+				<script>printMenu()</script>
+				<div id=buttons>
+
+					<button onclick="checkAll()">I WANT IT ALL!!!</button>
+					<button onclick="uncheckAll()">EW GROSS TAKE IT BACK!</button>
+					<button onclick="orderUp()">Order Up!</button>
+				</div>
+		</div>
+
+		<div id="food" onClick="eat()"></div>
+    <div id="drink" onClick="drink()"></div>
+
+    <div id="receipt" style="display:none"></div>
+    <div id="countertop" style="display:none">
+
+      <img src="drive/Fork.gif" style="position:absolute">
+      <img src="drive/Spoon.gif" style="position:absolute">
+      <img src="drive/Platter.jpg" style="width:625px;margin-left:17%;">
+			<img src="items/chopsticks.png" style="position:absolute" width="205" height="205">
+			<button id = "refresh" onclick ="window.location.reload();"> Go Back </button>
+
+			<audio id="Dust">
+				<source src="Dust.mp3" type="audio/mpeg">
+			</audio>
+      <input type="submit" value="New Order" onclick="newOrder()" style="margin-left:14.5%;">
+    </div>
+
+	<hr/>
+	<hr/>
+	<hr/>
+	<footer>© JR Gumarin, IST 351 at Mercer University, ALL WORK DONE BY MY ME AND MY OWN COLD CYBERNETIC HANDS! Copyright 2020</footer>
+
+</body>
+
+</html>
