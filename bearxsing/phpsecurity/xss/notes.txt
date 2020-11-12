@@ -1,0 +1,4 @@
+term XSS coined by Microsoft
+
+SOP = Same Origin Policy - stops one site from reading/writing to another
+checks for: protocol, host, port
