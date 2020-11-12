@@ -132,12 +132,11 @@ Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execut
     #check token in every form to further validate users (seen in step 1)
     &lt;form action="./phpsecurity/csrf/delete.php" method="post"&gt;
       &lt;input type="submit" name="submit" value="Delete your account"&gt;
-      &lt;input type="hidden" name="_token" value="<?php echo $_SESSION['_token'];"
+      &lt;input type="hidden" name="_token" value="&lt;?php echo $_SESSION['_token'];"&gt; #place the token into the form
     </form>
     </code>
   </pre>
-    <h5><a href="https://laravel.com/docs/8.x/csrf"> There are also modern packages and frameworks called "middleware" that include protections for CSRF.
-    </a></h5>
+    <h5><a href="https://laravel.com/docs/8.x/csrf"> There are also modern packages and frameworks called "middleware" that include protections for CSRF.</a></h5>
     <h5><a href="https://www.checkmarx.com/2016/01/22/ultimate-guide-understanding-preventing-csrf/">CSRF tokens, for the uninitiated, are client-side mechanisms used to make each request unique for the user. When the token is verified on the server-side, the request is validated, and because the app creates a new token each time any page is served to anyone, the request could not be forged.</a></h5>
     <h5><a href="https://www.youtube.com/watch?v=Ub5TLow9GL4">Check out this link to learn more about Tokens and protection against CSRF!</a></h5>
     <h5><a href="https://www.youtube.com/watch?v=j-rQiXYJsH0">Check out this link to go through the same tutorial I did!</a></h5>
